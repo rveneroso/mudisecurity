@@ -5,7 +5,7 @@
         <div class="container">
  			<div th:replace="~{base :: titulo('Novo Pedido')}"></div>
 
-            <form th:object="${requisicaoNovoPedido}" class="card-body" action="/pedido/novo" 
+            <form th:object="${requisicaoNovoPedido}" class="card-body" th:action="@{/pedido/novo}" 
             method="POST" mt-3 modelAttribute="requisicaoNovoPedido">
 	            <div class="card">
 	                <div class="form-group">
@@ -39,7 +39,7 @@
 	                    	Erros da descrição do produto.
 	                    </div>
 	                </div>
-	                <button class="btn btn-primary" type="submit">Login</button>
+	                <button class="btn btn-primary" type="submit">Cadastrar</button>
 	            </form>
             </div>
         </div>
